@@ -1,11 +1,8 @@
 ---
-title : "<h1>STAY PRODUCTIVE WITH 
-            <br> MODERN WORKSPACE</h1>"
+title : "open future from sourc"
 enable: true
-subtitle: >
-        We have the world's largest network of 
-        workspaces and co-working spaces.
-heroBGimg: "images/hero/hero-bg.jpg"
-heroVideo : "https://vimeo.com/45830194?autoplay=1&rel=0"
-herosVideoDesc: "<span> <strong>coHub. in</strong> 30 Seconds</span>"
+subtitle: Zhiyuan Chen
+coverImage: "images/cover/background.png"
+coverVideo : "images/cover/background.mp4"
+coverVideoDesc: "open future from source"
 ---
