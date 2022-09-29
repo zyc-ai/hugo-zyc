@@ -1,8 +1,10 @@
-.hero {
+.cover {
   padding: 250px 0 200px;
   position: relative;
   background-position: center;
   background-size: cover;
+  min-height: 800px;
+  max-height: 900px;
 
   @include desktop-lg {
     padding: 150px 0 120px;
@@ -28,15 +30,15 @@
   }
 
   &-content {
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 1;
 
     h1 {
       color: $white;
       margin-bottom: 15px;
-      font-size: 50px;
-      line-height: 70px;
+      font-size: 48px;
+      line-height: 60px;
 
       @include tablet {
         font-size: 40px;
@@ -55,9 +57,10 @@
 
     p {
       color: $white;
-      font-size: 19px;
+      font-size: 24px;
       line-height: 32px;
-      width: 83%;
+      width: 100%;
+      // max-width: 640px;
       margin: 0 auto 50px;
 
       @include desktop {
@@ -69,55 +72,28 @@
     }
   }
 
-  &-video-player {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
+  &-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 
-    @include desktop {
-      margin-top: 60px;
-    }
-    @include mobile {
-      margin-top: 30px;
-    }
-    .hero-video-player-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      a {
-        display: block;
-        position: relative;
-        background: $white;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        color: $black;
-        margin-bottom: 20px;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-          transform: scale(1.2);
-          i {
-            color: $primary-color;
-            font-size: 20px;
-          }
-        }
-        i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          transition: all 0.3s ease-in-out;
-        }
-      }
-    }
-
-    span {
+    video {
       color: $white;
-      font-family: $primary-font;
+      font-size: 24px;
+      line-height: 32px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto 50px;
+
+      @include desktop {
+        width: 100%;
+      }
+      @include mobile {
+        margin: 0;
+      }
     }
   }
 }
